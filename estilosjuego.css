@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+/*Color del fondo*/
+
+body{
+
+ background-color: gainsboro;
+
+}
+
+
+
+    /*Estilos del título del juego*/
+
+h1{
+
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(196, 3, 3);
+
+}
+
+    /*Estilos del contenedor que contiene los botones*/
+
+.contenedor{
+
+    width: 70%;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 60px;
+    height: 450px;
+    position: relative;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+
+
+    /*Estilo y transiciones del boton iniciar*/
+
+.boton {
+    transition: display 2s;
+    -webkit-transition: display 2s;
+    transition: visibility 1s;
+    -webkit-transition: visibility 1s;
+
+    cursor: pointer;
+    width: 420px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: none;
+    border-bottom: 4px solid #c4c6c7;
+    border-radius: 8px;
+    font-size: 3em;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 210px);
+    transition: .5s;
+    outline: none;
+}
+
+.boton:hover {
+    color: #ecf0f1;
+    background: #2c3e50;
+    border-bottom: 4px solid #1f3346;
+}
+
+.boton:active {
+    transform: scale(.95);
+}
+
+.boton{
+
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    font-size: 2em;
+    
+}
+
+/*Animacion al ocultar el boton*/
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+        display: block;
+
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        display: block;
+
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+/*Llamamos a esta clase cuando queramos ocultar el boton iniciar*/
+
+.ocultar {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    
+    visibility: hidden;
+}
+
+
+/*Tamaño y color de los botones de colores*/
+
+.contenedor div{
+
+    width: 50%;
+
+}
+
+#naranja{
+
+    background-color: rgb(248, 104, 52);
+
+}
+
+#azul{
+
+    background-color: cornflowerblue;
+
+}
+
+#amarillo{
+
+    background-color: rgb(253, 253, 78);
+
+}
+
+#verde{
+
+    background-color: rgb(60, 139, 60);
+
+}
+
+#verde.saturar{
+
+    background-color: white;
+
+}
+
+#azul.saturar{
+
+    background-color: white;
+
+
+}
+
+#naranja.saturar{
+
+    background-color: white;
+
+}
+
+#amarillo.saturar{
+
+    background-color: white;
+
+}
